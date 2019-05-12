@@ -1,0 +1,20 @@
+.container {
+  .programs {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    .programs {
+      .program {
+        width: 48%;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

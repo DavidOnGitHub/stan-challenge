@@ -1,0 +1,19 @@
+.container {
+  margin: 0 5px 50px 5px;
+  width: 133px;
+
+  .preview {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+
+    .preview {
+      height: auto;
+      width: 100%;
+    }
+  }
+}

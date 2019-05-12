@@ -1,0 +1,65 @@
+.container {
+  height: 60px;
+  background: linear-gradient(#0098fe, #0167fd);
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
+
+  .site-name {
+    font-size: 34px;
+    color: white;
+    font-weight: 600;
+    text-shadow: rgba(0, 0, 0, 0.1) 2px 3px;
+    text-decoration: none;
+  }
+
+  .actions {
+    .login-button,
+    .trial-button {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 16px;
+      margin-right: 20px;
+    }
+
+    .trial-button {
+      background: linear-gradient(#444444, #40403e);
+      padding: 10px 15px;
+      margin-right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    padding: 20px 0 0 0;
+    flex-direction: column;
+
+    .site-name {
+      font-size: 30px;
+      padding-bottom: 10px;
+    }
+
+    .actions {
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      background-color: orange;
+
+      .login-button, .trial-button {
+        flex-grow: 1;
+        text-align: center;
+        margin: 0;
+        flex-basis: 50%;
+      }
+      .trial-button {
+        background: transparent;
+      }
+    }
+  }
+}

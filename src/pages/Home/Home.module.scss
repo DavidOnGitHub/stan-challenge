@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+
+  .tile-container {
+    padding: 10px;
+    .tile {
+      height: 200px;
+      width: 140px;
+      background-image: url('../../assets/placeholder.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+    }
+    .title {
+      padding: 10px 0;
+    }
+  }
+}

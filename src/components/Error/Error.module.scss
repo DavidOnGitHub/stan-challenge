@@ -1,0 +1,9 @@
+.container {
+  color: #606060;
+  min-height: 300px;
+
+  @media only screen and (max-width: 480px) {
+    text-align: center;
+    font-size: 26px;
+  }
+}
